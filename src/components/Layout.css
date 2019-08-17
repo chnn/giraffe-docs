@@ -1,0 +1,144 @@
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+.layout {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --g0-obsidian: #0f0e15;
+  --g1-raven: #1c1c21;
+  --g2-kevlar: #202028;
+  --g3-castle: #292933;
+  --g4-onyx: #31313d;
+  --g5-pepper: #383846;
+  --g6-smoke: #434453;
+  --g7-graphite: #545667;
+  --g8-storm: #676978;
+  --g9-mountain: #757888;
+  --g10-wolf: #8e91a1;
+  --g11-sidewalk: #999dab;
+  --g12-forge: #a4a8b6;
+  --g13-mist: #bec2cc;
+  --g14-chromium: #c6cad3;
+  --g15-platinum: #d4d7dd;
+  --g16-pearl: #e7e8eb;
+  --g17-whisper: #eeeff2;
+  --g18-cloud: #f6f6f8;
+  --g19-ghost: #fafafc;
+  --g20-white: #ffffff;
+
+  --c-basalt: #2f1f29;
+  --c-ruby: #bf3d5e;
+  --c-fire: #dc4e58;
+  --c-fire-disabled: #6f3943;
+  --c-curacao: #f95f53;
+  --c-curacao-disabled: #eadad8;
+  --c-dreamsicle: #ff8564;
+  --c-tungsten: #ffb6a0;
+  --c-marmelade: #ffdccf;
+  --c-flan: #fff7f4;
+
+  --c-abyss: #182838;
+  --c-sapphire: #326bba;
+  --c-ocean: #4591ed;
+  --c-ocean-disabled: #32547f;
+  --c-pool: #22adf6;
+  --c-pool-disabled: #c9e0ed;
+  --c-laser: #00c9ff;
+  --c-hydrogen: #6bdfff;
+  --c-neutrino: #bef0ff;
+  --c-yeti: #f0fcff;
+
+  --c-shadow: #1f2039;
+  --c-void: #311f94;
+  --c-amethyst: #513cc6;
+  --c-amethyst-disabled: #484281;
+  --c-star: #7a65f2;
+  --c-star-disabled: #d6d5ed;
+  --c-comet: #9394ff;
+  --c-potassium: #b1b6ff;
+  --c-moonstone: #c9d0ff;
+  --c-twilight: #f2f4ff;
+
+  --c-gypsy: #152b2d;
+  --c-emerald: #108174;
+  --c-viridian: #32b08c;
+  --c-viridian-disabled: #2b6058;
+  --c-rainforest: #4ed8a0;
+  --c-rainforest-disabled: #cfe6e1;
+  --c-honeydew: #7ce490;
+  --c-krypton: #a5f3b4;
+  --c-wasabi: #c6ffd0;
+  --c-mint: #f2fff4;
+
+  --c-oak: #3f241f;
+  --c-topaz: #e85b1c;
+  --c-tiger: #f48d38;
+  --c-pineapple: #ffb94a;
+  --c-thunder: #ffd255;
+  --c-sulfur: #ffe480;
+  --c-daisy: #fff6b8;
+  --c-banana: #fffdde;
+
+  --spacing-xxs: 3px;
+  --spacing-xs: 6px;
+  --spacing-s: 12px;
+  --spacing-m: 24px;
+  --spacing-l: 36px;
+  --spacing-xl: 72px;
+  --spacing-xxl: 144px;
+
+  --font-xs: 10px;
+  --font-s: 12px;
+  --font-m: 16px;
+  --font-l: 24px;
+  --font-xl: 36px;
+
+  --radius-s: 4px;
+}
+
+a {
+  color: var(--c-pool);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--c-laser);
+}
+
+pre {
+  padding: var(--spacing-s);
+  border: 1px solid var(--g3-castle);
+  border-radius: var(--radius-s);
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.layout {
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(var(--g0-obsidian), var(--g1-raven));
+  color: var(--g16-pearl);
+  font-family: system-ui, sans-serif;
+}
+
+.layout__content {
+  flex: 1 1 100%;
+  padding: var(--spacing-m) var(--spacing-xl);
+  overflow: auto;
+}
