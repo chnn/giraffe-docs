@@ -27,8 +27,6 @@ export const BasicLinePlot: FC = () => {
   ])
 
   const config: Config = {
-    width: 600,
-    height: 400,
     table,
     layers: [
       {

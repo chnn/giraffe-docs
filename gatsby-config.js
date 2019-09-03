@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docsPages`,
+        path: `${__dirname}/src/pages/docs/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
@@ -21,6 +28,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: require.resolve('./src/components/Layout.tsx'),
+          docsPages: require.resolve('./src/components/DocsLayout.tsx'),
         },
       },
     },

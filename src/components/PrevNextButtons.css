@@ -1,0 +1,12 @@
+.prev-next {
+  padding: var(--spacing-m);
+  margin-top: var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.prev-next__link {
+  display: flex;
+  align-items: center;
+}

@@ -1,22 +1,30 @@
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper,
-.layout {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,400i,500,500i&display=swap');
 
 :root {
+  --spacing-xxs: 3px;
+  --spacing-xs: 6px;
+  --spacing-s: 12px;
+  --spacing-m: 24px;
+  --spacing-l: 36px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 84px;
+  --spacing-xxl: 124px;
+
+  --font-xxs: 10px;
+  --font-xs: 12px;
+  --font-s: 16px;
+  --font-m: 20px;
+  --font-l: 24px;
+  --font-l: 36px;
+
+  --font-sans: 'Rubik', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  --screen-s: 450px;
+  --screen-m: 768px;
+
+  --radius-s: 4px;
+
   --g0-obsidian: #0f0e15;
   --g1-raven: #1c1c21;
   --g2-kevlar: #202028;
@@ -91,54 +99,77 @@ body,
   --c-sulfur: #ffe480;
   --c-daisy: #fff6b8;
   --c-banana: #fffdde;
-
-  --spacing-xxs: 3px;
-  --spacing-xs: 6px;
-  --spacing-s: 12px;
-  --spacing-m: 24px;
-  --spacing-l: 36px;
-  --spacing-xl: 72px;
-  --spacing-xxl: 144px;
-
-  --font-xs: 10px;
-  --font-s: 12px;
-  --font-m: 16px;
-  --font-l: 24px;
-  --font-xl: 36px;
-
-  --radius-s: 4px;
 }
 
-a {
-  color: var(--c-pool);
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+.layout {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:link {
+  color: var(--g16-pearl);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-a:hover {
+a:hover,
+a:visited:hover {
   color: var(--c-laser);
 }
 
 pre {
-  padding: var(--spacing-s);
-  border: 1px solid var(--g3-castle);
+  padding: var(--spacing-s) var(--spacing-m);
   border-radius: var(--radius-s);
+  background: var(--g2-kevlar);
 }
 
 code {
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-mono);
+  font-size: var(--font-s);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 .layout {
-  display: flex;
-  align-items: stretch;
   background: linear-gradient(var(--g0-obsidian), var(--g1-raven));
   color: var(--g16-pearl);
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-sans);
+  font-size: var(--font-s);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.layout > .header {
+  width: 100%;
+  flex: 0 0 auto;
 }
 
 .layout__content {
-  flex: 1 1 100%;
-  padding: var(--spacing-m) var(--spacing-xl);
-  overflow: auto;
+  flex: 1 1 0;
+  overflow: hidden;
 }
