@@ -13,7 +13,7 @@ export const DOCS_TOC = [
     name: 'Guides',
     links: [
       {name: 'The Table Interface', url: '/docs/guides/table'},
-      {name: 'Loading Input Data with Adapters', url: '/docs/guides/line'},
+      {name: 'Loading Input Data with Adapters', url: '/docs/guides/adapters'},
       {name: 'Grouping Data with Aesthetics', url: '/docs/guides/aesthetics'},
       {name: 'Usage with TypeScript', url: '/docs/guides/typescript'},
       {

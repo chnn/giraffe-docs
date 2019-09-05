@@ -28,6 +28,16 @@
   font-size: var(--font-s);
 }
 
+.docs-article a {
+  color: var(--c-pool);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.docs-article em {
+  font-weight: 500;
+}
+
 .docs-article pre {
   margin-bottom: var(--spacing-m);
 }
@@ -44,7 +54,7 @@
 .docs-article table th {
   text-align: left;
   text-transform: uppercase;
-  color: var(--g10-wolf);
+  color: var(--g10);
 }
 
 .docs-article table th,

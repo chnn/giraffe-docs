@@ -6,15 +6,15 @@
 }
 
 .button--default {
-  background: var(--g3-castle);
+  background: var(--g3);
 }
 
 .button--default:hover {
-  background: var(--g6-smoke);
+  background: var(--g6);
 }
 
 .button--default:active {
-  background: var(--g1-raven);
+  background: var(--g1);
 }
 
 .button--primary {

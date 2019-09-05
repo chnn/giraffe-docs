@@ -3,7 +3,7 @@ import {FC} from 'react'
 
 import {Layout} from './Layout'
 import {Sidebar} from './Sidebar'
-import {PrevNextButtons} from './PrevNextButtons'
+import {ArticleButtons} from './ArticleButtons'
 import {DocsArticle} from './DocsArticle'
 import './DocsLayout.css'
 
@@ -17,7 +17,7 @@ export const DocsLayout: FC<Props> = ({path, children}) => {
       <div className="docs-layout">
         <div className="docs-layout__content">
           <DocsArticle>{children}</DocsArticle>
-          <PrevNextButtons path={path} />
+          <ArticleButtons path={path} />
         </div>
         <Sidebar />
       </div>

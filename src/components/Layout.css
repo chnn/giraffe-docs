@@ -24,27 +24,27 @@
 
   --radius-s: 4px;
 
-  --g0-obsidian: #0f0e15;
-  --g1-raven: #1c1c21;
-  --g2-kevlar: #202028;
-  --g3-castle: #292933;
-  --g4-onyx: #31313d;
-  --g5-pepper: #383846;
-  --g6-smoke: #434453;
-  --g7-graphite: #545667;
-  --g8-storm: #676978;
-  --g9-mountain: #757888;
-  --g10-wolf: #8e91a1;
-  --g11-sidewalk: #999dab;
-  --g12-forge: #a4a8b6;
-  --g13-mist: #bec2cc;
-  --g14-chromium: #c6cad3;
-  --g15-platinum: #d4d7dd;
-  --g16-pearl: #e7e8eb;
-  --g17-whisper: #eeeff2;
-  --g18-cloud: #f6f6f8;
-  --g19-ghost: #fafafc;
-  --g20-white: #ffffff;
+  --g0: #0f0e15;
+  --g1: #1c1c21;
+  --g2: #202028;
+  --g3: #292933;
+  --g4: #31313d;
+  --g5: #383846;
+  --g6: #434453;
+  --g7: #545667;
+  --g8: #676978;
+  --g9: #757888;
+  --g10: #8e91a1;
+  --g11: #999dab;
+  --g12: #a4a8b6;
+  --g13: #bec2cc;
+  --g14: #c6cad3;
+  --g15: #d4d7dd;
+  --g16: #e7e8eb;
+  --g17: #eeeff2;
+  --g18: #f6f6f8;
+  --g19: #fafafc;
+  --g20: #ffffff;
 
   --c-basalt: #2f1f29;
   --c-ruby: #bf3d5e;
@@ -121,7 +121,7 @@ body,
 
 a,
 a:link {
-  color: var(--g16-pearl);
+  color: var(--g16);
   text-decoration: none;
   font-weight: 400;
 }
@@ -134,7 +134,7 @@ a:visited:hover {
 pre {
   padding: var(--spacing-s) var(--spacing-m);
   border-radius: var(--radius-s);
-  background: var(--g2-kevlar);
+  background: var(--g2);
 }
 
 code {
@@ -154,8 +154,8 @@ h6 {
 }
 
 .layout {
-  background: linear-gradient(var(--g0-obsidian), var(--g1-raven));
-  color: var(--g16-pearl);
+  background: linear-gradient(var(--g0), var(--g1));
+  color: var(--g16);
   font-family: var(--font-sans);
   font-size: var(--font-s);
   display: flex;

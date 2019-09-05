@@ -1,7 +1,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  background: var(--g1-raven);
+  background: var(--g1);
   overflow-y: auto;
   padding: var(--spacing-m) 0;
 }
@@ -19,7 +19,7 @@
   font-style: italic;
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-s);
-  color: var(--g10-wolf);
+  color: var(--g10);
 }
 
 .sidebar__link {
@@ -34,5 +34,5 @@
 }
 
 .sidebar__footer {
-  border-top: 1px solid var(--g3-castle);
+  border-top: 1px solid var(--g3);
 }
