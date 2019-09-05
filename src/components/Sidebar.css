@@ -1,10 +1,15 @@
 .sidebar {
-  border-left: 1px solid var(--g3-castle);
   display: flex;
   flex-direction: column;
   background: var(--g1-raven);
-  padding: var(--spacing-m);
   overflow-y: auto;
+  padding: var(--spacing-m) 0;
+}
+
+.sidebar__header,
+.sidebar__link {
+  padding-left: var(--spacing-m);
+  padding-right: var(--spacing-m);
 }
 
 .sidebar__header {
@@ -24,8 +29,8 @@
 
 .sidebar__link--active {
   color: var(--c-pool);
-  border-left: 4px solid var(--c-pool);
-  padding-left: var(--spacing-s);
+  border-left: 2px solid var(--c-pool);
+  padding-left: calc(var(--spacing-m) - 2px);
 }
 
 .sidebar__footer {

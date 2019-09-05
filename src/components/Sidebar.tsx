@@ -9,7 +9,7 @@ export const Sidebar: FC = () => {
     <nav className="sidebar">
       {DOCS_TOC.map(({name: sectionName, links}) => (
         <>
-          <h2 className="sidebar__header">{sectionName}</h2>
+          {sectionName && <h2 className="sidebar__header">{sectionName}</h2>}
           {links.map(({name, url}) => (
             <Link
               to={url}

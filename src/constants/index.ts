@@ -1,5 +1,8 @@
 export const DOCS_TOC = [
   {
+    links: [{name: 'Welcome', url: '/docs'}],
+  },
+  {
     name: 'Get Started',
     links: [
       {name: 'Installation', url: '/docs/get-started/installation'},

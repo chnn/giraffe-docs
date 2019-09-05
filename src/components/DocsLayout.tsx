@@ -4,6 +4,7 @@ import {FC} from 'react'
 import {Layout} from './Layout'
 import {Sidebar} from './Sidebar'
 import {PrevNextButtons} from './PrevNextButtons'
+import {DocsArticle} from './DocsArticle'
 import './DocsLayout.css'
 
 interface Props {
@@ -15,7 +16,7 @@ export const DocsLayout: FC<Props> = ({path, children}) => {
     <Layout title="Docs">
       <div className="docs-layout">
         <div className="docs-layout__content">
-          <div className="docs-layout__prose">{children}</div>
+          <DocsArticle>{children}</DocsArticle>
           <PrevNextButtons path={path} />
         </div>
         <Sidebar />

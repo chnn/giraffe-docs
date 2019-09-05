@@ -15,13 +15,12 @@
   --font-s: 16px;
   --font-m: 20px;
   --font-l: 24px;
-  --font-l: 36px;
+  --font-xl: 36px;
+  --font-xxl: 48px;
+  --font-xxxl: 64px;
 
   --font-sans: 'Rubik', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
-
-  --screen-s: 450px;
-  --screen-m: 768px;
 
   --radius-s: 4px;
 
